@@ -63,20 +63,28 @@ class _UKScreenState extends State<UKScreen> {
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
-                            child: Column(
-                              children: [
-                                Icon(Icons.document_scanner_outlined, size: 30,color: Colors.purple.shade800,),
-                                Text("Documents", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.purple.shade800),)
-                              ],
+                            child: InkWell(onTap: (){
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>UKDocuments()));
+                            },
+                              child: Column(
+                                children: [
+                                  Icon(Icons.document_scanner_outlined, size: 30,color: Colors.purple.shade800,),
+                                  Text("Documents", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.purple.shade800),)
+                                ],
+                              ),
                             ),
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
-                            child: Column(
-                              children: [
-                                Icon(Icons.monetization_on_rounded, size: 30,color: Colors.purple.shade800,),
-                                Text("Scholarships", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.purple.shade800),)
-                              ],
+                            child: InkWell(onTap: (){
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>UKScholarships()));
+                            },
+                              child: Column(
+                                children: [
+                                  Icon(Icons.monetization_on_rounded, size: 30,color: Colors.purple.shade800,),
+                                  Text("Scholarships", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.purple.shade800),)
+                                ],
+                              ),
                             ),
                           )
                         ],
@@ -88,20 +96,28 @@ class _UKScreenState extends State<UKScreen> {
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(left: 50),
-                            child: Column(
-                              children: [
-                                Icon(Icons.newspaper_rounded, size: 30, color: Colors.purple.shade800,),
-                                Text("Exams", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.purple.shade800),)
-                              ],
+                            child: InkWell(onTap: (){
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>UKExams()));
+                            },
+                              child: Column(
+                                children: [
+                                  Icon(Icons.newspaper_rounded, size: 30, color: Colors.purple.shade800,),
+                                  Text("Exams", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.purple.shade800),)
+                                ],
+                              ),
                             ),
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 60),
-                            child: Column(
-                              children: [
-                                Icon(Icons.language, size: 30,color: Colors.purple.shade800,),
-                                Text("Languages", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.purple.shade800),)
-                              ],
+                            child: InkWell(onTap: (){
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>UKColleges()));
+                            },
+                              child: Column(
+                                children: [
+                                  Icon(Icons.language, size: 30,color: Colors.purple.shade800,),
+                                  Text("Languages", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.purple.shade800),)
+                                ],
+                              ),
                             ),
                           )
                         ],

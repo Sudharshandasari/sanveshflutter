@@ -165,26 +165,42 @@ class _AustraliaExamsState extends State<AustraliaExams> {
                 child: SingleChildScrollView(scrollDirection: Axis.vertical,
                   child: Column(
                     children: [
-                      Text("IELTS", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("IELTS", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
+                            ),
+                          ],
+                        ),
                       ),
-                      Text("International English Language Testing System, commonly known as IELTS, is an English language proficiency exam accepted in Australian universities. Every university has a different score requirement for a specific field and level of study, but generally, you must target a 6.5 – 7.0 band score. IELTS is conducted in 800+ centres, and the fee for applying is around Rs. 15,500. The scores of this exam are acceptable for 2 years from the examination date. The IELTS Exam structure consists of 4 components: speaking, listening, writing, and reading to be completed in 2 hours and 45 minutes.",
-                      style: TextStyle(fontSize: 18, color: Colors.white),
-                      textAlign: TextAlign.justify,),
-                      Text("TOEFL", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("TOEFL", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
+                            ),
+                          ],
+                        ),
                       ),
-                      Text("Test of English as a Foreign Language or TOEFL is a popular English language proficiency exam of 120 marks. There are 4 sections, similar to IELTS, with 30 marks for each section. The exam fee is around US \$190, which varies depending on the test location. In India, there are 4,500+ test centres and applicants can take the exam online or offline. A 90 score in TOEFL-iBT is generally needed if you are seeking admission to Australian institutions. A total score of 100-110 will ensure that you are accepted at an institution of your choice",
-                        style: TextStyle(fontSize: 18, color: Colors.white),
-                        textAlign: TextAlign.justify,),
-                      Text("IELTS", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("GRE", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
+                            ),
+                          ],
+                        ),
                       ),
-                      Text("International English Language Testing System, commonly known as IELTS, is an English language proficiency exam accepted in Australian universities. Every university has a different score requirement for a specific field and level of study, but generally, you must target a 6.5 – 7.0 band score. IELTS is conducted in 800+ centres, and the fee for applying is around Rs. 15,500. The scores of this exam are acceptable for 2 years from the examination date. The IELTS Exam structure consists of 4 components: speaking, listening, writing, and reading to be completed in 2 hours and 45 minutes.",
-                        style: TextStyle(fontSize: 18, color: Colors.white),
-                        textAlign: TextAlign.justify,),
-                      Text("IELTS", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("GATE", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
+                            ),
+                          ],
+                        ),
                       ),
-                      Text("International English Language Testing System, commonly known as IELTS, is an English language proficiency exam accepted in Australian universities. Every university has a different score requirement for a specific field and level of study, but generally, you must target a 6.5 – 7.0 band score. IELTS is conducted in 800+ centres, and the fee for applying is around Rs. 15,500. The scores of this exam are acceptable for 2 years from the examination date. The IELTS Exam structure consists of 4 components: speaking, listening, writing, and reading to be completed in 2 hours and 45 minutes.",
-                        style: TextStyle(fontSize: 18, color: Colors.white),
-                        textAlign: TextAlign.justify,)
                     ],
                   ),
                 ),

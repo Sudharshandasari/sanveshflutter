@@ -34,7 +34,7 @@ class _NeatherlandsScreenState extends State<NeatherlandsScreen> {
                     Row(
                       children: [
                         Container(width: wi/16,),
-                        Text("Explore Your", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),),
+                        Text("Neatherlands", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),),
                       ],
                     ),
                   ],
@@ -63,20 +63,28 @@ class _NeatherlandsScreenState extends State<NeatherlandsScreen> {
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
-                            child: Column(
-                              children: [
-                                Icon(Icons.document_scanner_outlined, size: 30,color: Colors.purple.shade800,),
-                                Text("Documents", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.purple.shade800),)
-                              ],
+                            child: InkWell(onTap: (){
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>NeatherlandsDocuments()));
+                            },
+                              child: Column(
+                                children: [
+                                  Icon(Icons.document_scanner_outlined, size: 30,color: Colors.purple.shade800,),
+                                  Text("Documents", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.purple.shade800),)
+                                ],
+                              ),
                             ),
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
-                            child: Column(
-                              children: [
-                                Icon(Icons.monetization_on_rounded, size: 30,color: Colors.purple.shade800,),
-                                Text("Scholarships", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.purple.shade800),)
-                              ],
+                            child: InkWell(onTap: (){
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>NeatherlandsScholarships()));
+                            },
+                              child: Column(
+                                children: [
+                                  Icon(Icons.monetization_on_rounded, size: 30,color: Colors.purple.shade800,),
+                                  Text("Scholarships", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.purple.shade800),)
+                                ],
+                              ),
                             ),
                           )
                         ],
@@ -88,20 +96,28 @@ class _NeatherlandsScreenState extends State<NeatherlandsScreen> {
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(left: 50),
-                            child: Column(
-                              children: [
-                                Icon(Icons.newspaper_rounded, size: 30, color: Colors.purple.shade800,),
-                                Text("Exams", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.purple.shade800),)
-                              ],
+                            child: InkWell(onTap: (){
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>NeatherlandsExams()));
+                            },
+                              child: Column(
+                                children: [
+                                  Icon(Icons.newspaper_rounded, size: 30, color: Colors.purple.shade800,),
+                                  Text("Exams", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.purple.shade800),)
+                                ],
+                              ),
                             ),
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 60),
-                            child: Column(
-                              children: [
-                                Icon(Icons.language, size: 30,color: Colors.purple.shade800,),
-                                Text("Languages", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.purple.shade800),)
-                              ],
+                            child: InkWell(onTap: (){
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>NeatherlandsColleges()));
+                            },
+                              child: Column(
+                                children: [
+                                  Icon(Icons.language, size: 30,color: Colors.purple.shade800,),
+                                  Text("Languages", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.purple.shade800),)
+                                ],
+                              ),
                             ),
                           )
                         ],
@@ -124,55 +140,58 @@ class _NeatherlandsScreenState extends State<NeatherlandsScreen> {
     );
   }
 }
-class JapanExams extends StatefulWidget {
-  const JapanExams({super.key});
+class NeatherlandsExams extends StatefulWidget {
+  const NeatherlandsExams({super.key});
 
   @override
-  State<JapanExams> createState() => _JapanExamsState();
+  State<NeatherlandsExams> createState() => _NeatherlandsExamsState();
 }
 
-class _JapanExamsState extends State<JapanExams> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold();
-  }
-}
-class JapanColleges extends StatefulWidget {
-  const JapanColleges({super.key});
-
-  @override
-  State<JapanColleges> createState() => _JapanCollegesState();
-}
-
-class _JapanCollegesState extends State<JapanColleges> {
+class _NeatherlandsExamsState extends State<NeatherlandsExams> {
   @override
   Widget build(BuildContext context) {
     return Scaffold();
   }
 }
-class JapanDocuments extends StatefulWidget {
-  const JapanDocuments({super.key});
+class NeatherlandsDocuments extends StatefulWidget {
+  const NeatherlandsDocuments({super.key});
 
   @override
-  State<JapanDocuments> createState() => _JapanDocumentsState();
+  State<NeatherlandsDocuments> createState() => _NeatherlandsDocumentsState();
 }
 
-class _JapanDocumentsState extends State<JapanDocuments> {
+class _NeatherlandsDocumentsState extends State<NeatherlandsDocuments> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+    );
+  }
+}
+class NeatherlandsScholarships extends StatefulWidget {
+  const NeatherlandsScholarships({super.key});
+
+  @override
+  State<NeatherlandsScholarships> createState() => _NeatherlandsScholarshipsState();
+}
+
+class _NeatherlandsScholarshipsState extends State<NeatherlandsScholarships> {
   @override
   Widget build(BuildContext context) {
     return Scaffold();
   }
 }
-class JapanScholarships extends StatefulWidget {
-  const JapanScholarships({super.key});
+class NeatherlandsColleges extends StatefulWidget {
+  const NeatherlandsColleges({super.key});
 
   @override
-  State<JapanScholarships> createState() => _JapanScholarshipsState();
+  State<NeatherlandsColleges> createState() => _NeatherlandsCollegesState();
 }
 
-class _JapanScholarshipsState extends State<JapanScholarships> {
+class _NeatherlandsCollegesState extends State<NeatherlandsColleges> {
   @override
   Widget build(BuildContext context) {
     return Scaffold();
   }
 }
+
+
