@@ -11,7 +11,7 @@ class _NorwayScreenState extends State<NorwayScreen> {
   Widget build(BuildContext context) {
     double hi = MediaQuery.of(context).size.height;
     double wi = MediaQuery.of(context).size.width;
-    return  Container(
+    return Container(
       decoration: BoxDecoration(color: Colors.amber),
       child: Scaffold(
         backgroundColor: Colors.transparent,
@@ -114,14 +114,14 @@ class _NorwayScreenState extends State<NorwayScreen> {
                             },
                               child: Column(
                                 children: [
-                                  Icon(Icons.language, size: 30,color: Colors.purple.shade800,),
-                                  Text("Languages", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.purple.shade800),)
+                                  Icon(Icons.account_balance_outlined, size: 30,color: Colors.purple.shade800,),
+                                  Text("Universities", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.purple.shade800),)
                                 ],
                               ),
                             ),
                           )
                         ],
-                      )
+                      ),
                     ],
                   ),
                 ),
@@ -150,7 +150,75 @@ class NorwayExams extends StatefulWidget {
 class _NorwayExamsState extends State<NorwayExams> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    double hi = MediaQuery.of(context).size.height;
+    double wi = MediaQuery.of(context).size.width;
+    return Scaffold(
+      body: SingleChildScrollView(scrollDirection: Axis.vertical,
+        child: Column(
+          children: [
+            Container(
+              height: hi/1,
+              width: wi,
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.purple.shade800),
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: SingleChildScrollView(scrollDirection: Axis.vertical,
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Exams Required", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 35, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("PTE Academic", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("TOEFL iBT", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("IELTS", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("C1 Advanced", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
 class NorwayDocuments extends StatefulWidget {
@@ -163,7 +231,83 @@ class NorwayDocuments extends StatefulWidget {
 class _NorwayDocumentsState extends State<NorwayDocuments> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    double hi = MediaQuery.of(context).size.height;
+    double wi = MediaQuery.of(context).size.width;
+    return Scaffold(
+      body: SingleChildScrollView(scrollDirection: Axis.vertical,
+        child: Column(
+          children: [
+            Container(
+              height: hi/1,
+              width: wi,
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.purple.shade800),
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: SingleChildScrollView(scrollDirection: Axis.vertical,
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Text("Required Documents", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30, color: Colors.white),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Text("  Health insurance", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Text("  Proof of financial ability", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Text(" Birth certificate", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text(" Receipt of the fees that you have paid for the admission", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text(" A valid passport", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Text(" 2 passport-sized photographs", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Text(" Statement of purpose", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Text(" Any evidence that proves you will leave Norway after course completion", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
 
@@ -177,7 +321,60 @@ class NorwayColleges extends StatefulWidget {
 class _NorwayCollegesState extends State<NorwayColleges> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    double hi = MediaQuery.of(context).size.height;
+    double wi = MediaQuery.of(context).size.width;
+    return Scaffold(
+      body: SingleChildScrollView(scrollDirection: Axis.vertical,
+        child: Column(
+          children: [
+            Container(
+              height: hi/1,
+              width: wi,
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.purple.shade800),
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: SingleChildScrollView(scrollDirection: Axis.vertical,
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Text("Top Universities", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30, color: Colors.white),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Text(" University of Bergen", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Text(" BI Norwegian Business Schoo", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Text(" Kristiania University", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Text("Molde University College", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Text(" Norwegian University of Science and Technology", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
 class NorwayScholarships extends StatefulWidget {
@@ -190,6 +387,110 @@ class NorwayScholarships extends StatefulWidget {
 class _NorwayScholarshipsState extends State<NorwayScholarships> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    double hi = MediaQuery.of(context).size.height;
+    double wi = MediaQuery.of(context).size.width;
+    return Scaffold(
+      body: SingleChildScrollView(scrollDirection: Axis.horizontal,
+        child: Column(
+          children: [
+            Container(
+              height: hi/1,
+              width: wi,
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.purple.shade800),
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: SingleChildScrollView(scrollDirection: Axis.horizontal,
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Scholarships in Norway", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Leakey Foundation Research Grants 2024", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Horowitz Foundation Grants 2023", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Ethicon Foundation Fund Travel Grants 2023", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("ACI Foundation Richard D. Stehly Memorial Scholarships, 2023", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Howard G. Buffett Fund For Women Journalists (FWJ) 2023", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("SFI Industry RD&I Fellowship Programme 2023", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("ServiceScape Scholarship 2023", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Dissertation Fieldwork Grants 2023", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }

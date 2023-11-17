@@ -114,14 +114,14 @@ class _IrelandScreenState extends State<IrelandScreen> {
                             },
                               child: Column(
                                 children: [
-                                  Icon(Icons.language, size: 30,color: Colors.purple.shade800,),
-                                  Text("Languages", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.purple.shade800),)
+                                  Icon(Icons.home_work_rounded, size: 30,color: Colors.purple.shade800,),
+                                  Text("Universities", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.purple.shade800),)
                                 ],
                               ),
                             ),
                           )
                         ],
-                      )
+                      ),
                     ],
                   ),
                 ),
@@ -150,7 +150,93 @@ class IrelandExmas extends StatefulWidget {
 class _IrelandExmasState extends State<IrelandExmas> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    double hi = MediaQuery.of(context).size.height;
+    double wi = MediaQuery.of(context).size.width;
+    return Scaffold(
+      body: SingleChildScrollView(scrollDirection: Axis.vertical,
+        child: Column(
+          children: [
+            Container(
+              height: hi/1,
+              width: wi,
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.purple.shade800),
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: SingleChildScrollView(scrollDirection: Axis.vertical,
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Exams Required", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 35, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("TOEFL", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("GRE", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("IELTS", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("PTE", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("CAE", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("GMAT", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
 class IrelandColleges extends StatefulWidget {
@@ -163,7 +249,129 @@ class IrelandColleges extends StatefulWidget {
 class _IrelandCollegesState extends State<IrelandColleges> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    double hi = MediaQuery.of(context).size.height;
+    double wi = MediaQuery.of(context).size.width;
+    return Scaffold(
+      body: SingleChildScrollView(scrollDirection: Axis.horizontal,
+        child: Column(
+          children: [
+            Container(
+              height: hi/1,
+              width: wi,
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.purple.shade800),
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: SingleChildScrollView(scrollDirection: Axis.horizontal,
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Top Universities", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Trinity College Dublin", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("University College Dublin", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("National University of Ireland,", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("University College Cork", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("University of Limerick", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Dublin City University", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Maynooth University", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("University College Dublin (UCD) - Michael", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Smurfit Graduate Business School", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Dublin Institute of Technology (DIT)", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
 class IrelandDocuments extends StatefulWidget {
@@ -176,7 +384,129 @@ class IrelandDocuments extends StatefulWidget {
 class _IrelandDocumentsState extends State<IrelandDocuments> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    double hi = MediaQuery.of(context).size.height;
+    double wi = MediaQuery.of(context).size.width;
+    return Scaffold(
+      body: SingleChildScrollView(scrollDirection: Axis.horizontal,
+        child: Column(
+          children: [
+            Container(
+              height: hi/1,
+              width: wi,
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.purple.shade800),
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: SingleChildScrollView(scrollDirection: Axis.horizontal,
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Required Documents", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text(" Visa Application Form", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("  Medical Insurance", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text(" Passport", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Letter of Acceptance", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text(" Proof of Sufficient Funds", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text(" Academic Documents", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text(" Statement of Purpose", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text(" Police Clearance Certificate", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text(" Proof of Accommodation", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text(" Proof of Tuition Fees Payment", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
 class IrelandScholarships extends StatefulWidget {
@@ -189,6 +519,110 @@ class IrelandScholarships extends StatefulWidget {
 class _IrelandScholarshipsState extends State<IrelandScholarships> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    double hi = MediaQuery.of(context).size.height;
+    double wi = MediaQuery.of(context).size.width;
+    return Scaffold(
+      body: SingleChildScrollView(scrollDirection: Axis.horizontal,
+        child: Column(
+          children: [
+            Container(
+              height: hi/1,
+              width: wi,
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.purple.shade800),
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: SingleChildScrollView(scrollDirection: Axis.horizontal,
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Scholarships in Ireland", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Government of Ireland scholarship", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text(" The Walsh Fellowship", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Irish Scholarship for International Students", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Government of Ireland International Education Scholarships Programme", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("The Government of Ireland Postgraduate Scholarship Programme", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Scholarships by the Irish Research Council for Humanities and Social Sciences", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Fulbright Scholarships", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Erasmus Scholarships", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }

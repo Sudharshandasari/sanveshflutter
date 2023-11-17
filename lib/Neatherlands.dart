@@ -11,7 +11,7 @@ class _NeatherlandsScreenState extends State<NeatherlandsScreen> {
   Widget build(BuildContext context) {
     double hi = MediaQuery.of(context).size.height;
     double wi = MediaQuery.of(context).size.width;
-    return  Container(
+    return Container(
       decoration: BoxDecoration(color: Colors.amber),
       child: Scaffold(
         backgroundColor: Colors.transparent,
@@ -34,7 +34,7 @@ class _NeatherlandsScreenState extends State<NeatherlandsScreen> {
                     Row(
                       children: [
                         Container(width: wi/16,),
-                        Text("Neatherlands", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),),
+                        Text("Netherlands", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),),
                       ],
                     ),
                   ],
@@ -64,7 +64,7 @@ class _NeatherlandsScreenState extends State<NeatherlandsScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>NeatherlandsDocuments()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>NetherlandsDocuments()));
                             },
                               child: Column(
                                 children: [
@@ -77,7 +77,7 @@ class _NeatherlandsScreenState extends State<NeatherlandsScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>NeatherlandsScholarships()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>NetherlandsScholarships()));
                             },
                               child: Column(
                                 children: [
@@ -97,7 +97,7 @@ class _NeatherlandsScreenState extends State<NeatherlandsScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 50),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>NeatherlandsExams()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>NetherlandsExam()));
                             },
                               child: Column(
                                 children: [
@@ -110,18 +110,18 @@ class _NeatherlandsScreenState extends State<NeatherlandsScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 60),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>NeatherlandsColleges()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>NetherlandsColleges()));
                             },
                               child: Column(
                                 children: [
-                                  Icon(Icons.language, size: 30,color: Colors.purple.shade800,),
-                                  Text("Languages", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.purple.shade800),)
+                                  Icon(Icons.account_balance_outlined, size: 30,color: Colors.purple.shade800,),
+                                  Text("Universities", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.purple.shade800),)
                                 ],
                               ),
                             ),
                           )
                         ],
-                      )
+                      ),
                     ],
                   ),
                 ),
@@ -140,58 +140,453 @@ class _NeatherlandsScreenState extends State<NeatherlandsScreen> {
     );
   }
 }
-class NeatherlandsExams extends StatefulWidget {
-  const NeatherlandsExams({super.key});
+class NetherlandsExam extends StatefulWidget {
+  const NetherlandsExam({super.key});
 
   @override
-  State<NeatherlandsExams> createState() => _NeatherlandsExamsState();
+  State<NetherlandsExam> createState() => _NetherlandsExamState();
 }
 
-class _NeatherlandsExamsState extends State<NeatherlandsExams> {
+class _NetherlandsExamState extends State<NetherlandsExam> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
-  }
-}
-class NeatherlandsDocuments extends StatefulWidget {
-  const NeatherlandsDocuments({super.key});
-
-  @override
-  State<NeatherlandsDocuments> createState() => _NeatherlandsDocumentsState();
-}
-
-class _NeatherlandsDocumentsState extends State<NeatherlandsDocuments> {
-  @override
-  Widget build(BuildContext context) {
+    double hi = MediaQuery.of(context).size.height;
+    double wi = MediaQuery.of(context).size.width;
     return Scaffold(
+      body: SingleChildScrollView(scrollDirection: Axis.vertical,
+        child: Column(
+          children: [
+            Container(
+              height: hi/1,
+              width: wi,
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.purple.shade800),
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: SingleChildScrollView(scrollDirection: Axis.vertical,
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Exams Required", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 35, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("GRE", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("IELTS", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
-class NeatherlandsScholarships extends StatefulWidget {
-  const NeatherlandsScholarships({super.key});
+class NetherlandsScholarships extends StatefulWidget {
+  const NetherlandsScholarships({super.key});
 
   @override
-  State<NeatherlandsScholarships> createState() => _NeatherlandsScholarshipsState();
+  State<NetherlandsScholarships> createState() => _NetherlandsScholarshipsState();
 }
 
-class _NeatherlandsScholarshipsState extends State<NeatherlandsScholarships> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold();
-  }
-}
-class NeatherlandsColleges extends StatefulWidget {
-  const NeatherlandsColleges({super.key});
-
-  @override
-  State<NeatherlandsColleges> createState() => _NeatherlandsCollegesState();
-}
-
-class _NeatherlandsCollegesState extends State<NeatherlandsColleges> {
+class _NetherlandsScholarshipsState extends State<NetherlandsScholarships> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    double hi = MediaQuery.of(context).size.height;
+    double wi = MediaQuery.of(context).size.width;
+    return Scaffold(
+      body: SingleChildScrollView(scrollDirection: Axis.horizontal,
+        child: Column(
+          children: [
+            Container(
+              height: hi/1,
+              width: wi,
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.purple.shade800),
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: SingleChildScrollView(scrollDirection: Axis.horizontal,
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Scholarships in Netherlands", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Education Future International Scholarship - USA & Non-USA 2023", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("The Leakey Foundation-Franklin Mosher Baldwin Memorial Fellowships, 2024", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Leakey Foundation Research Grants 2024", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Horowitz Foundation Grants 2023", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Ethicon Foundation Fund Travel Grants 2023", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Ethicon Foundation Fund Travel Grants 2023", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("ACI Foundation Richard D. Stehly Memorial Scholarships, 2023", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Howard G. Buffett Fund For Women Journalists (FWJ) 2023", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
+class NetherlandsDocuments extends StatefulWidget {
+  const NetherlandsDocuments({super.key});
 
+  @override
+  State<NetherlandsDocuments> createState() => _NetherlandsDocumentsState();
+}
 
+class _NetherlandsDocumentsState extends State<NetherlandsDocuments> {
+  @override
+  Widget build(BuildContext context) {
+    double hi = MediaQuery.of(context).size.height;
+    double wi = MediaQuery.of(context).size.width;
+    return Scaffold(
+      body: SingleChildScrollView(scrollDirection: Axis.horizontal,
+        child: Column(
+          children: [
+            Container(
+              height: hi/1,
+              width: wi,
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.purple.shade800),
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: SingleChildScrollView(scrollDirection: Axis.horizontal,
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Required Documents", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text(" Results of TOEFL or IELTS", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text(" Results of Dutch language test Staatsexamen NT2", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text(" Portfolio", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text(" Proof of funds", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text(" Health insurance", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text(" A copy of your passport", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text(" Statement of Purpose", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("  Mark sheets of Standard X, XII, and the bachelor’s degree", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text(" Motivation Letter", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text(" Proof of Tuition Fees Payment", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+class NetherlandsColleges extends StatefulWidget {
+  const NetherlandsColleges({super.key});
+
+  @override
+  State<NetherlandsColleges> createState() => _NetherlandsCollegesState();
+}
+
+class _NetherlandsCollegesState extends State<NetherlandsColleges> {
+  @override
+  Widget build(BuildContext context) {
+    double hi = MediaQuery.of(context).size.height;
+    double wi = MediaQuery.of(context).size.width;
+    return Scaffold(
+      body: SingleChildScrollView(scrollDirection: Axis.horizontal,
+        child: Column(
+          children: [
+            Container(
+              height: hi/1,
+              width: wi,
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.purple.shade800),
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: SingleChildScrollView(scrollDirection: Axis.horizontal,
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Top Universities", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("University of Amsterdam", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Delft University of Technology", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Utrecht University", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Wageningen University & Research", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Leiden University", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Eindhoven University of Technology", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("University of Groningen", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Erasmus University Rotterdam", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("University of Twente", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Text("Vrije Universiteit Amsterdam", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

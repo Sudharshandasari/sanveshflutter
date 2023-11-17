@@ -13,6 +13,7 @@ import 'package:sanveshflutter/NorwayScreen.dart';
 import 'package:sanveshflutter/SingaporeScreen.dart';
 import 'package:sanveshflutter/UKScreen.dart';
 import 'package:sanveshflutter/USAScreen.dart';
+import 'package:sanveshflutter/NewZealandScreen.dart';
 void main(){
   runApp(MyApp());
 }
@@ -524,7 +525,7 @@ class _NewScreenState extends State<NewScreen> {
         Padding(
           padding: const EdgeInsets.only(left: 20, right: 20),
           child: InkWell(onTap: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>NewScreen()));
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>NewZealandScreen()));
           },
             child: Container(
               height: hi/6,
