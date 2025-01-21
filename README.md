@@ -1,4 +1,4 @@
-# sanveshflutter
+# flutter
 
 A new Flutter project.
 
