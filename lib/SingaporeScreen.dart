@@ -12,16 +12,16 @@ class _SingaporeScreenState extends State<SingaporeScreen> {
     double hi = MediaQuery.of(context).size.height;
     double wi = MediaQuery.of(context).size.width;
     return Container(
-      decoration: BoxDecoration(color: Colors.amber),
+      decoration: const BoxDecoration(color: Colors.amber),
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: SingleChildScrollView(scrollDirection: Axis.vertical,
-          child: Stack(alignment: Alignment(0, 2),
+          child: Stack(alignment: const Alignment(0, 2),
             children: [
               Container(
                 height: hi/2,
                 width: wi,
-                decoration: BoxDecoration(borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20),
+                decoration: BoxDecoration(borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(20),
                     bottomRight: Radius.circular(20)
                 ),
                     color: Colors.purple.shade800
@@ -34,7 +34,7 @@ class _SingaporeScreenState extends State<SingaporeScreen> {
                     Row(
                       children: [
                         Container(width: wi/16,),
-                        Text("Explore Your", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),),
+                        const Text("Explore Your", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),),
                       ],
                     ),
                   ],
@@ -44,7 +44,7 @@ class _SingaporeScreenState extends State<SingaporeScreen> {
                 height: hi/3.5,
                 width: wi/1.2,
                 child: Card(
-                  shape: RoundedRectangleBorder(
+                  shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(20),
                           bottomRight: Radius.circular(20),
@@ -64,7 +64,7 @@ class _SingaporeScreenState extends State<SingaporeScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>SingaporeDocuments()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const SingaporeDocuments()));
                             },
                               child: Column(
                                 children: [
@@ -77,7 +77,7 @@ class _SingaporeScreenState extends State<SingaporeScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>SingaporeScholarships()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const SingaporeScholarships()));
                             },
                               child: Column(
                                 children: [
@@ -97,7 +97,7 @@ class _SingaporeScreenState extends State<SingaporeScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 50),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>SingaporeExam()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const SingaporeExam()));
                             },
                               child: Column(
                                 children: [
@@ -110,7 +110,7 @@ class _SingaporeScreenState extends State<SingaporeScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 60),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>SingaporeColleges()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const SingaporeColleges()));
                             },
                               child: Column(
                                 children: [
@@ -133,8 +133,8 @@ class _SingaporeScreenState extends State<SingaporeScreen> {
           onPressed: (){
             Navigator.pop(context);
           },
-          child: Icon(Icons.arrow_back, color: Colors.white, size: 30,),
           backgroundColor: Colors.purple.shade800,
+          child: Icon(Icons.arrow_back, color: Colors.white, size: 30,),
         ),
       ),
     );
@@ -150,7 +150,7 @@ class SingaporeExam extends StatefulWidget {
 class _SingaporeExamState extends State<SingaporeExam> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }
 class SingaporeColleges extends StatefulWidget {
@@ -163,7 +163,7 @@ class SingaporeColleges extends StatefulWidget {
 class _SingaporeCollegesState extends State<SingaporeColleges> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }
 class SingaporeDocuments extends StatefulWidget {
@@ -176,7 +176,7 @@ class SingaporeDocuments extends StatefulWidget {
 class _SingaporeDocumentsState extends State<SingaporeDocuments> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }
 class SingaporeScholarships extends StatefulWidget {
@@ -189,6 +189,6 @@ class SingaporeScholarships extends StatefulWidget {
 class _SingaporeScholarshipsState extends State<SingaporeScholarships> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }

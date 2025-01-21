@@ -12,16 +12,16 @@ class _AustraliaScreenState extends State<AustraliaScreen> {
     double hi = MediaQuery.of(context).size.height;
     double wi = MediaQuery.of(context).size.width;
     return Container(
-      decoration: BoxDecoration(color: Colors.amber),
+      decoration: const BoxDecoration(color: Colors.amber),
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: SingleChildScrollView(scrollDirection: Axis.vertical,
-          child: Stack(alignment: Alignment(0, 2),
+          child: Stack(alignment: const Alignment(0, 2),
             children: [
               Container(
                 height: hi/2,
                 width: wi,
-                decoration: BoxDecoration(borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20),
+                decoration: BoxDecoration(borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(20),
                     bottomRight: Radius.circular(20)
                 ),
                     color: Colors.purple.shade800
@@ -34,7 +34,7 @@ class _AustraliaScreenState extends State<AustraliaScreen> {
                     Row(
                       children: [
                         Container(width: wi/16,),
-                        Text("Australia", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),),
+                        const Text("Australia", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),),
                       ],
                     ),
                   ],
@@ -44,7 +44,7 @@ class _AustraliaScreenState extends State<AustraliaScreen> {
                 height: hi/3.5,
                 width: wi/1.2,
                 child: Card(
-                  shape: RoundedRectangleBorder(
+                  shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(20),
                           bottomRight: Radius.circular(20),
@@ -64,7 +64,7 @@ class _AustraliaScreenState extends State<AustraliaScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>AustraliaDocuments()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const AustraliaDocuments()));
                             },
                               child: Column(
                                 children: [
@@ -77,7 +77,7 @@ class _AustraliaScreenState extends State<AustraliaScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>AustraliaScholarships()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const AustraliaScholarships()));
                             },
                               child: Column(
                                 children: [
@@ -97,7 +97,7 @@ class _AustraliaScreenState extends State<AustraliaScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 50),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>AustraliaExams()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const AustraliaExams()));
                             },
                               child: Column(
                                 children: [
@@ -110,7 +110,7 @@ class _AustraliaScreenState extends State<AustraliaScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 60),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>AustraliaColleges()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const AustraliaColleges()));
                             },
                               child: Column(
                                 children: [
@@ -133,8 +133,8 @@ class _AustraliaScreenState extends State<AustraliaScreen> {
           onPressed: (){
             Navigator.pop(context);
           },
-          child: Icon(Icons.arrow_back, color: Colors.white, size: 30,),
           backgroundColor: Colors.purple.shade800,
+          child: Icon(Icons.arrow_back, color: Colors.white, size: 30,),
         ),
       ),
     );
@@ -160,13 +160,13 @@ class _AustraliaExamsState extends State<AustraliaExams> {
               height: hi/1,
               width: wi,
               decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.purple.shade800),
-              child: Padding(
-                padding: const EdgeInsets.all(20.0),
+              child: const Padding(
+                padding: EdgeInsets.all(20.0),
                 child: SingleChildScrollView(scrollDirection: Axis.vertical,
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Exams:", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 35, color: Colors.white),
@@ -175,7 +175,7 @@ class _AustraliaExamsState extends State<AustraliaExams> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("TOEFL", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
@@ -184,7 +184,7 @@ class _AustraliaExamsState extends State<AustraliaExams> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("GRE", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
@@ -193,7 +193,7 @@ class _AustraliaExamsState extends State<AustraliaExams> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("GMAT", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
@@ -232,13 +232,13 @@ class _AustraliaDocumentsState extends State<AustraliaDocuments> {
               height: hi/1,
               width: wi,
               decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.purple.shade800),
-              child: Padding(
-                padding: const EdgeInsets.all(20.0),
+              child: const Padding(
+                padding: EdgeInsets.all(20.0),
                 child: SingleChildScrollView(scrollDirection: Axis.horizontal,
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Required Documents", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30, color: Colors.white),
@@ -247,7 +247,7 @@ class _AustraliaDocumentsState extends State<AustraliaDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text(" Proof of enrolment", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -256,7 +256,7 @@ class _AustraliaDocumentsState extends State<AustraliaDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text(" A valid passport.", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -265,7 +265,7 @@ class _AustraliaDocumentsState extends State<AustraliaDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text(" Your visa application", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
@@ -274,7 +274,7 @@ class _AustraliaDocumentsState extends State<AustraliaDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Your Genuine Temporary Entrant (GTE) statement.", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -283,7 +283,7 @@ class _AustraliaDocumentsState extends State<AustraliaDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Academic documents", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -292,7 +292,7 @@ class _AustraliaDocumentsState extends State<AustraliaDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Evidence of your English proficiency skills (such as IELTS test scores)", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -301,7 +301,7 @@ class _AustraliaDocumentsState extends State<AustraliaDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text(" Statement of Purpose", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -340,13 +340,13 @@ class _AustraliaCollegesState extends State<AustraliaColleges> {
               height: hi/1,
               width: wi,
               decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.purple.shade800),
-              child: Padding(
-                padding: const EdgeInsets.all(20.0),
+              child: const Padding(
+                padding: EdgeInsets.all(20.0),
                 child: SingleChildScrollView(scrollDirection: Axis.horizontal,
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Top Universities", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30, color: Colors.white),
@@ -355,7 +355,7 @@ class _AustraliaCollegesState extends State<AustraliaColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("University of Melbourne", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -364,7 +364,7 @@ class _AustraliaCollegesState extends State<AustraliaColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Australian National University", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -373,7 +373,7 @@ class _AustraliaCollegesState extends State<AustraliaColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Monash University", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
@@ -382,7 +382,7 @@ class _AustraliaCollegesState extends State<AustraliaColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("University of Western Australia", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -391,7 +391,7 @@ class _AustraliaCollegesState extends State<AustraliaColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("University of Queensland", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -400,7 +400,7 @@ class _AustraliaCollegesState extends State<AustraliaColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("University of Sydney", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -409,7 +409,7 @@ class _AustraliaCollegesState extends State<AustraliaColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("University Of New South Wales", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -418,7 +418,7 @@ class _AustraliaCollegesState extends State<AustraliaColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("University of Technology Sydney", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -427,7 +427,7 @@ class _AustraliaCollegesState extends State<AustraliaColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("University of Wollongong", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -466,13 +466,13 @@ class _AustraliaScholarshipsState extends State<AustraliaScholarships> {
               height: hi/1,
               width: wi,
               decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.purple.shade800),
-              child: Padding(
-                padding: const EdgeInsets.all(20.0),
+              child: const Padding(
+                padding: EdgeInsets.all(20.0),
                 child: SingleChildScrollView(scrollDirection: Axis.horizontal,
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Scholarships in Australia", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30, color: Colors.white),
@@ -481,7 +481,7 @@ class _AustraliaScholarshipsState extends State<AustraliaScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Australian Government Research Training Program Scholarships", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -490,7 +490,7 @@ class _AustraliaScholarshipsState extends State<AustraliaScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text(" GyanDhan Scholarship", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -499,7 +499,7 @@ class _AustraliaScholarshipsState extends State<AustraliaScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("CSIRO Scholarship Program", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
@@ -508,7 +508,7 @@ class _AustraliaScholarshipsState extends State<AustraliaScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Destination Australia Scholarship", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -517,7 +517,7 @@ class _AustraliaScholarshipsState extends State<AustraliaScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("CSIRO Data61 Scholarship Program", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -526,7 +526,7 @@ class _AustraliaScholarshipsState extends State<AustraliaScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("ACIAR John Allwright Fellowship (JAF)", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -535,7 +535,7 @@ class _AustraliaScholarshipsState extends State<AustraliaScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Endeavour Postgraduate Scholarship", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),

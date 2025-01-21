@@ -12,16 +12,16 @@ class _IrelandScreenState extends State<IrelandScreen> {
     double hi = MediaQuery.of(context).size.height;
     double wi = MediaQuery.of(context).size.width;
     return Container(
-      decoration: BoxDecoration(color: Colors.amber),
+      decoration: const BoxDecoration(color: Colors.amber),
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: SingleChildScrollView(scrollDirection: Axis.vertical,
-          child: Stack(alignment: Alignment(0, 2),
+          child: Stack(alignment: const Alignment(0, 2),
             children: [
               Container(
                 height: hi/2,
                 width: wi,
-                decoration: BoxDecoration(borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20),
+                decoration: BoxDecoration(borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(20),
                     bottomRight: Radius.circular(20)
                 ),
                     color: Colors.purple.shade800
@@ -34,7 +34,7 @@ class _IrelandScreenState extends State<IrelandScreen> {
                     Row(
                       children: [
                         Container(width: wi/16,),
-                        Text("Ireland", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),),
+                        const Text("Ireland", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),),
                       ],
                     ),
                   ],
@@ -44,7 +44,7 @@ class _IrelandScreenState extends State<IrelandScreen> {
                 height: hi/3.5,
                 width: wi/1.2,
                 child: Card(
-                  shape: RoundedRectangleBorder(
+                  shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(20),
                           bottomRight: Radius.circular(20),
@@ -64,7 +64,7 @@ class _IrelandScreenState extends State<IrelandScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>IrelandDocuments()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const IrelandDocuments()));
                             },
                               child: Column(
                                 children: [
@@ -77,7 +77,7 @@ class _IrelandScreenState extends State<IrelandScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>IrelandScholarships()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const IrelandScholarships()));
                             },
                               child: Column(
                                 children: [
@@ -97,7 +97,7 @@ class _IrelandScreenState extends State<IrelandScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 50),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>IrelandExmas()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const IrelandExmas()));
                             },
                               child: Column(
                                 children: [
@@ -110,7 +110,7 @@ class _IrelandScreenState extends State<IrelandScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 60),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>IrelandColleges()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const IrelandColleges()));
                             },
                               child: Column(
                                 children: [
@@ -133,8 +133,8 @@ class _IrelandScreenState extends State<IrelandScreen> {
           onPressed: (){
             Navigator.pop(context);
           },
-          child: Icon(Icons.arrow_back, color: Colors.white, size: 30,),
           backgroundColor: Colors.purple.shade800,
+          child: Icon(Icons.arrow_back, color: Colors.white, size: 30,),
         ),
       ),
     );
@@ -160,13 +160,13 @@ class _IrelandExmasState extends State<IrelandExmas> {
               height: hi/1,
               width: wi,
               decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.purple.shade800),
-              child: Padding(
-                padding: const EdgeInsets.all(20.0),
+              child: const Padding(
+                padding: EdgeInsets.all(20.0),
                 child: SingleChildScrollView(scrollDirection: Axis.vertical,
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Exams Required", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 35, color: Colors.white),
@@ -175,7 +175,7 @@ class _IrelandExmasState extends State<IrelandExmas> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("TOEFL", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
@@ -184,7 +184,7 @@ class _IrelandExmasState extends State<IrelandExmas> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("GRE", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
@@ -193,7 +193,7 @@ class _IrelandExmasState extends State<IrelandExmas> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("IELTS", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
@@ -202,7 +202,7 @@ class _IrelandExmasState extends State<IrelandExmas> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("PTE", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
@@ -211,7 +211,7 @@ class _IrelandExmasState extends State<IrelandExmas> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("CAE", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
@@ -220,7 +220,7 @@ class _IrelandExmasState extends State<IrelandExmas> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("GMAT", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
@@ -259,13 +259,13 @@ class _IrelandCollegesState extends State<IrelandColleges> {
               height: hi/1,
               width: wi,
               decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.purple.shade800),
-              child: Padding(
-                padding: const EdgeInsets.all(20.0),
+              child: const Padding(
+                padding: EdgeInsets.all(20.0),
                 child: SingleChildScrollView(scrollDirection: Axis.horizontal,
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Top Universities", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30, color: Colors.white),
@@ -274,7 +274,7 @@ class _IrelandCollegesState extends State<IrelandColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Trinity College Dublin", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -283,7 +283,7 @@ class _IrelandCollegesState extends State<IrelandColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("University College Dublin", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -292,7 +292,7 @@ class _IrelandCollegesState extends State<IrelandColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("National University of Ireland,", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
@@ -301,7 +301,7 @@ class _IrelandCollegesState extends State<IrelandColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("University College Cork", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -310,7 +310,7 @@ class _IrelandCollegesState extends State<IrelandColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("University of Limerick", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -319,7 +319,7 @@ class _IrelandCollegesState extends State<IrelandColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Dublin City University", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -328,7 +328,7 @@ class _IrelandCollegesState extends State<IrelandColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Maynooth University", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -337,7 +337,7 @@ class _IrelandCollegesState extends State<IrelandColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("University College Dublin (UCD) - Michael", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -346,7 +346,7 @@ class _IrelandCollegesState extends State<IrelandColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Smurfit Graduate Business School", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -355,7 +355,7 @@ class _IrelandCollegesState extends State<IrelandColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Dublin Institute of Technology (DIT)", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -394,13 +394,13 @@ class _IrelandDocumentsState extends State<IrelandDocuments> {
               height: hi/1,
               width: wi,
               decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.purple.shade800),
-              child: Padding(
-                padding: const EdgeInsets.all(20.0),
+              child: const Padding(
+                padding: EdgeInsets.all(20.0),
                 child: SingleChildScrollView(scrollDirection: Axis.horizontal,
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Required Documents", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30, color: Colors.white),
@@ -409,7 +409,7 @@ class _IrelandDocumentsState extends State<IrelandDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text(" Visa Application Form", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -418,7 +418,7 @@ class _IrelandDocumentsState extends State<IrelandDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("  Medical Insurance", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -427,7 +427,7 @@ class _IrelandDocumentsState extends State<IrelandDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text(" Passport", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
@@ -436,7 +436,7 @@ class _IrelandDocumentsState extends State<IrelandDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Letter of Acceptance", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -445,7 +445,7 @@ class _IrelandDocumentsState extends State<IrelandDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text(" Proof of Sufficient Funds", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -454,7 +454,7 @@ class _IrelandDocumentsState extends State<IrelandDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text(" Academic Documents", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -463,7 +463,7 @@ class _IrelandDocumentsState extends State<IrelandDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text(" Statement of Purpose", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -472,7 +472,7 @@ class _IrelandDocumentsState extends State<IrelandDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text(" Police Clearance Certificate", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -481,7 +481,7 @@ class _IrelandDocumentsState extends State<IrelandDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text(" Proof of Accommodation", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -490,7 +490,7 @@ class _IrelandDocumentsState extends State<IrelandDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text(" Proof of Tuition Fees Payment", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -529,13 +529,13 @@ class _IrelandScholarshipsState extends State<IrelandScholarships> {
               height: hi/1,
               width: wi,
               decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.purple.shade800),
-              child: Padding(
-                padding: const EdgeInsets.all(20.0),
+              child: const Padding(
+                padding: EdgeInsets.all(20.0),
                 child: SingleChildScrollView(scrollDirection: Axis.horizontal,
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Scholarships in Ireland", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30, color: Colors.white),
@@ -544,7 +544,7 @@ class _IrelandScholarshipsState extends State<IrelandScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Government of Ireland scholarship", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -553,7 +553,7 @@ class _IrelandScholarshipsState extends State<IrelandScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text(" The Walsh Fellowship", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -562,7 +562,7 @@ class _IrelandScholarshipsState extends State<IrelandScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Irish Scholarship for International Students", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
@@ -571,7 +571,7 @@ class _IrelandScholarshipsState extends State<IrelandScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Government of Ireland International Education Scholarships Programme", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -580,7 +580,7 @@ class _IrelandScholarshipsState extends State<IrelandScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("The Government of Ireland Postgraduate Scholarship Programme", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -589,7 +589,7 @@ class _IrelandScholarshipsState extends State<IrelandScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Scholarships by the Irish Research Council for Humanities and Social Sciences", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -598,7 +598,7 @@ class _IrelandScholarshipsState extends State<IrelandScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Fulbright Scholarships", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -607,7 +607,7 @@ class _IrelandScholarshipsState extends State<IrelandScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Erasmus Scholarships", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),

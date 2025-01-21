@@ -12,16 +12,16 @@ class _UKScreenState extends State<UKScreen> {
     double hi = MediaQuery.of(context).size.height;
     double wi = MediaQuery.of(context).size.width;
     return Container(
-      decoration: BoxDecoration(color: Colors.amber),
+      decoration: const BoxDecoration(color: Colors.amber),
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: SingleChildScrollView(scrollDirection: Axis.vertical,
-          child: Stack(alignment: Alignment(0, 2),
+          child: Stack(alignment: const Alignment(0, 2),
             children: [
               Container(
                 height: hi/2,
                 width: wi,
-                decoration: BoxDecoration(borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20),
+                decoration: BoxDecoration(borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(20),
                     bottomRight: Radius.circular(20)
                 ),
                     color: Colors.purple.shade800
@@ -34,7 +34,7 @@ class _UKScreenState extends State<UKScreen> {
                     Row(
                       children: [
                         Container(width: wi/16,),
-                        Text("Explore Your", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),),
+                        const Text("Explore Your", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),),
                       ],
                     ),
                   ],
@@ -44,7 +44,7 @@ class _UKScreenState extends State<UKScreen> {
                 height: hi/3.5,
                 width: wi/1.2,
                 child: Card(
-                  shape: RoundedRectangleBorder(
+                  shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(20),
                           bottomRight: Radius.circular(20),
@@ -64,7 +64,7 @@ class _UKScreenState extends State<UKScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>UKDocuments()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const UKDocuments()));
                             },
                               child: Column(
                                 children: [
@@ -77,7 +77,7 @@ class _UKScreenState extends State<UKScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>UKScholarships()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const UKScholarships()));
                             },
                               child: Column(
                                 children: [
@@ -97,7 +97,7 @@ class _UKScreenState extends State<UKScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 50),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>UKExams()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const UKExams()));
                             },
                               child: Column(
                                 children: [
@@ -110,7 +110,7 @@ class _UKScreenState extends State<UKScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 60),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>UKColleges()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const UKColleges()));
                             },
                               child: Column(
                                 children: [
@@ -133,8 +133,8 @@ class _UKScreenState extends State<UKScreen> {
           onPressed: (){
             Navigator.pop(context);
           },
-          child: Icon(Icons.arrow_back, color: Colors.white, size: 30,),
           backgroundColor: Colors.purple.shade800,
+          child: Icon(Icons.arrow_back, color: Colors.white, size: 30,),
         ),
       ),
     );
@@ -151,7 +151,7 @@ class UKExams extends StatefulWidget {
 class _UKExamsState extends State<UKExams> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }
 
@@ -165,7 +165,7 @@ class UKColleges extends StatefulWidget {
 class _UKCollegesState extends State<UKColleges> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }
 
@@ -179,7 +179,7 @@ class UKDocuments extends StatefulWidget {
 class _UKDocumentsState extends State<UKDocuments> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }
 
@@ -193,7 +193,7 @@ class UKScholarships extends StatefulWidget {
 class _UKScholarshipsState extends State<UKScholarships> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
 
     );
   }

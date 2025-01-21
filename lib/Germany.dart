@@ -12,16 +12,16 @@ class _GermanyScreenState extends State<GermanyScreen> {
     double hi = MediaQuery.of(context).size.height;
     double wi = MediaQuery.of(context).size.width;
     return Container(
-      decoration: BoxDecoration(color: Colors.amber),
+      decoration: const BoxDecoration(color: Colors.amber),
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: SingleChildScrollView(scrollDirection: Axis.vertical,
-          child: Stack(alignment: Alignment(0, 2),
+          child: Stack(alignment: const Alignment(0, 2),
             children: [
               Container(
                 height: hi/2,
                 width: wi,
-                decoration: BoxDecoration(borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20),
+                decoration: BoxDecoration(borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(20),
                     bottomRight: Radius.circular(20)
                 ),
                     color: Colors.purple.shade800
@@ -34,7 +34,7 @@ class _GermanyScreenState extends State<GermanyScreen> {
                     Row(
                       children: [
                         Container(width: wi/16,),
-                        Text("Germany", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),),
+                        const Text("Germany", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),),
                       ],
                     ),
                   ],
@@ -44,7 +44,7 @@ class _GermanyScreenState extends State<GermanyScreen> {
                 height: hi/3.5,
                 width: wi/1.2,
                 child: Card(
-                  shape: RoundedRectangleBorder(
+                  shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(20),
                           bottomRight: Radius.circular(20),
@@ -64,7 +64,7 @@ class _GermanyScreenState extends State<GermanyScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>GermanyDocuments()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const GermanyDocuments()));
                             },
                               child: Column(
                                 children: [
@@ -77,7 +77,7 @@ class _GermanyScreenState extends State<GermanyScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>GermanyScholarships()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const GermanyScholarships()));
                             },
                               child: Column(
                                 children: [
@@ -97,7 +97,7 @@ class _GermanyScreenState extends State<GermanyScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 50),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>GermanyExams()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const GermanyExams()));
                             },
                               child: Column(
                                 children: [
@@ -110,7 +110,7 @@ class _GermanyScreenState extends State<GermanyScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 60),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>GermanyColleges()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const GermanyColleges()));
                             },
                               child: Column(
                                 children: [
@@ -133,8 +133,8 @@ class _GermanyScreenState extends State<GermanyScreen> {
           onPressed: (){
             Navigator.pop(context);
           },
-          child: Icon(Icons.arrow_back, color: Colors.white, size: 30,),
           backgroundColor: Colors.purple.shade800,
+          child: Icon(Icons.arrow_back, color: Colors.white, size: 30,),
         ),
       ),
     );
@@ -150,7 +150,7 @@ class GermanyExams extends StatefulWidget {
 class _GermanyExamsState extends State<GermanyExams> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }
 class GermanyDocuments extends StatefulWidget {
@@ -163,7 +163,7 @@ class GermanyDocuments extends StatefulWidget {
 class _GermanyDocumentsState extends State<GermanyDocuments> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }
 class GermanyColleges extends StatefulWidget {
@@ -176,7 +176,7 @@ class GermanyColleges extends StatefulWidget {
 class _GermanyCollegesState extends State<GermanyColleges> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }
 class GermanyScholarships extends StatefulWidget {
@@ -189,6 +189,6 @@ class GermanyScholarships extends StatefulWidget {
 class _GermanyScholarshipsState extends State<GermanyScholarships> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }

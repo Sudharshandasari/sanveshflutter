@@ -12,16 +12,16 @@ class _NeatherlandsScreenState extends State<NeatherlandsScreen> {
     double hi = MediaQuery.of(context).size.height;
     double wi = MediaQuery.of(context).size.width;
     return Container(
-      decoration: BoxDecoration(color: Colors.amber),
+      decoration: const BoxDecoration(color: Colors.amber),
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: SingleChildScrollView(scrollDirection: Axis.vertical,
-          child: Stack(alignment: Alignment(0, 2),
+          child: Stack(alignment: const Alignment(0, 2),
             children: [
               Container(
                 height: hi/2,
                 width: wi,
-                decoration: BoxDecoration(borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20),
+                decoration: BoxDecoration(borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(20),
                     bottomRight: Radius.circular(20)
                 ),
                     color: Colors.purple.shade800
@@ -34,7 +34,7 @@ class _NeatherlandsScreenState extends State<NeatherlandsScreen> {
                     Row(
                       children: [
                         Container(width: wi/16,),
-                        Text("Netherlands", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),),
+                        const Text("Netherlands", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),),
                       ],
                     ),
                   ],
@@ -44,7 +44,7 @@ class _NeatherlandsScreenState extends State<NeatherlandsScreen> {
                 height: hi/3.5,
                 width: wi/1.2,
                 child: Card(
-                  shape: RoundedRectangleBorder(
+                  shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(20),
                           bottomRight: Radius.circular(20),
@@ -64,7 +64,7 @@ class _NeatherlandsScreenState extends State<NeatherlandsScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>NetherlandsDocuments()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const NetherlandsDocuments()));
                             },
                               child: Column(
                                 children: [
@@ -77,7 +77,7 @@ class _NeatherlandsScreenState extends State<NeatherlandsScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>NetherlandsScholarships()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const NetherlandsScholarships()));
                             },
                               child: Column(
                                 children: [
@@ -97,7 +97,7 @@ class _NeatherlandsScreenState extends State<NeatherlandsScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 50),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>NetherlandsExam()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const NetherlandsExam()));
                             },
                               child: Column(
                                 children: [
@@ -110,7 +110,7 @@ class _NeatherlandsScreenState extends State<NeatherlandsScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 60),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>NetherlandsColleges()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const NetherlandsColleges()));
                             },
                               child: Column(
                                 children: [
@@ -133,8 +133,8 @@ class _NeatherlandsScreenState extends State<NeatherlandsScreen> {
           onPressed: (){
             Navigator.pop(context);
           },
-          child: Icon(Icons.arrow_back, color: Colors.white, size: 30,),
           backgroundColor: Colors.purple.shade800,
+          child: Icon(Icons.arrow_back, color: Colors.white, size: 30,),
         ),
       ),
     );
@@ -160,13 +160,13 @@ class _NetherlandsExamState extends State<NetherlandsExam> {
               height: hi/1,
               width: wi,
               decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.purple.shade800),
-              child: Padding(
-                padding: const EdgeInsets.all(20.0),
+              child: const Padding(
+                padding: EdgeInsets.all(20.0),
                 child: SingleChildScrollView(scrollDirection: Axis.vertical,
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Exams Required", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 35, color: Colors.white),
@@ -175,7 +175,7 @@ class _NetherlandsExamState extends State<NetherlandsExam> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("GRE", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
@@ -184,7 +184,7 @@ class _NetherlandsExamState extends State<NetherlandsExam> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("IELTS", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
@@ -223,13 +223,13 @@ class _NetherlandsScholarshipsState extends State<NetherlandsScholarships> {
               height: hi/1,
               width: wi,
               decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.purple.shade800),
-              child: Padding(
-                padding: const EdgeInsets.all(20.0),
+              child: const Padding(
+                padding: EdgeInsets.all(20.0),
                 child: SingleChildScrollView(scrollDirection: Axis.horizontal,
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Scholarships in Netherlands", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30, color: Colors.white),
@@ -238,7 +238,7 @@ class _NetherlandsScholarshipsState extends State<NetherlandsScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Education Future International Scholarship - USA & Non-USA 2023", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -247,7 +247,7 @@ class _NetherlandsScholarshipsState extends State<NetherlandsScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("The Leakey Foundation-Franklin Mosher Baldwin Memorial Fellowships, 2024", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -256,7 +256,7 @@ class _NetherlandsScholarshipsState extends State<NetherlandsScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Leakey Foundation Research Grants 2024", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
@@ -265,7 +265,7 @@ class _NetherlandsScholarshipsState extends State<NetherlandsScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Horowitz Foundation Grants 2023", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -274,7 +274,7 @@ class _NetherlandsScholarshipsState extends State<NetherlandsScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Ethicon Foundation Fund Travel Grants 2023", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -283,7 +283,7 @@ class _NetherlandsScholarshipsState extends State<NetherlandsScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Ethicon Foundation Fund Travel Grants 2023", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -292,7 +292,7 @@ class _NetherlandsScholarshipsState extends State<NetherlandsScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("ACI Foundation Richard D. Stehly Memorial Scholarships, 2023", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -301,7 +301,7 @@ class _NetherlandsScholarshipsState extends State<NetherlandsScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Howard G. Buffett Fund For Women Journalists (FWJ) 2023", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -340,13 +340,13 @@ class _NetherlandsDocumentsState extends State<NetherlandsDocuments> {
               height: hi/1,
               width: wi,
               decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.purple.shade800),
-              child: Padding(
-                padding: const EdgeInsets.all(20.0),
+              child: const Padding(
+                padding: EdgeInsets.all(20.0),
                 child: SingleChildScrollView(scrollDirection: Axis.horizontal,
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Required Documents", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30, color: Colors.white),
@@ -355,7 +355,7 @@ class _NetherlandsDocumentsState extends State<NetherlandsDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text(" Results of TOEFL or IELTS", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -364,7 +364,7 @@ class _NetherlandsDocumentsState extends State<NetherlandsDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text(" Results of Dutch language test Staatsexamen NT2", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -373,7 +373,7 @@ class _NetherlandsDocumentsState extends State<NetherlandsDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text(" Portfolio", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
@@ -382,7 +382,7 @@ class _NetherlandsDocumentsState extends State<NetherlandsDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text(" Proof of funds", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -391,7 +391,7 @@ class _NetherlandsDocumentsState extends State<NetherlandsDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text(" Health insurance", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -400,7 +400,7 @@ class _NetherlandsDocumentsState extends State<NetherlandsDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text(" A copy of your passport", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -409,7 +409,7 @@ class _NetherlandsDocumentsState extends State<NetherlandsDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text(" Statement of Purpose", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -418,7 +418,7 @@ class _NetherlandsDocumentsState extends State<NetherlandsDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("  Mark sheets of Standard X, XII, and the bachelor’s degree", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -427,7 +427,7 @@ class _NetherlandsDocumentsState extends State<NetherlandsDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text(" Motivation Letter", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -436,7 +436,7 @@ class _NetherlandsDocumentsState extends State<NetherlandsDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text(" Proof of Tuition Fees Payment", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -475,13 +475,13 @@ class _NetherlandsCollegesState extends State<NetherlandsColleges> {
               height: hi/1,
               width: wi,
               decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.purple.shade800),
-              child: Padding(
-                padding: const EdgeInsets.all(20.0),
+              child: const Padding(
+                padding: EdgeInsets.all(20.0),
                 child: SingleChildScrollView(scrollDirection: Axis.horizontal,
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Top Universities", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30, color: Colors.white),
@@ -490,7 +490,7 @@ class _NetherlandsCollegesState extends State<NetherlandsColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("University of Amsterdam", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -499,7 +499,7 @@ class _NetherlandsCollegesState extends State<NetherlandsColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Delft University of Technology", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -508,7 +508,7 @@ class _NetherlandsCollegesState extends State<NetherlandsColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Utrecht University", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
@@ -517,7 +517,7 @@ class _NetherlandsCollegesState extends State<NetherlandsColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Wageningen University & Research", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -526,7 +526,7 @@ class _NetherlandsCollegesState extends State<NetherlandsColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Leiden University", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -535,7 +535,7 @@ class _NetherlandsCollegesState extends State<NetherlandsColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Eindhoven University of Technology", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -544,7 +544,7 @@ class _NetherlandsCollegesState extends State<NetherlandsColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("University of Groningen", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -553,7 +553,7 @@ class _NetherlandsCollegesState extends State<NetherlandsColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Erasmus University Rotterdam", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -562,7 +562,7 @@ class _NetherlandsCollegesState extends State<NetherlandsColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("University of Twente", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -571,7 +571,7 @@ class _NetherlandsCollegesState extends State<NetherlandsColleges> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Vrije Universiteit Amsterdam", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),

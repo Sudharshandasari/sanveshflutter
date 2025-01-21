@@ -12,16 +12,16 @@ class _ChinaScreenState extends State<ChinaScreen> {
     double hi = MediaQuery.of(context).size.height;
     double wi = MediaQuery.of(context).size.width;
     return Container(
-      decoration: BoxDecoration(color: Colors.amber),
+      decoration: const BoxDecoration(color: Colors.amber),
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: SingleChildScrollView(scrollDirection: Axis.vertical,
-          child: Stack(alignment: Alignment(0, 2),
+          child: Stack(alignment: const Alignment(0, 2),
             children: [
               Container(
                 height: hi/2,
                 width: wi,
-                decoration: BoxDecoration(borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20),
+                decoration: BoxDecoration(borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(20),
                     bottomRight: Radius.circular(20)
                 ),
                     color: Colors.purple.shade800
@@ -34,7 +34,7 @@ class _ChinaScreenState extends State<ChinaScreen> {
                     Row(
                       children: [
                         Container(width: wi/16,),
-                        Text("China", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),),
+                        const Text("China", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),),
                       ],
                     ),
                   ],
@@ -44,7 +44,7 @@ class _ChinaScreenState extends State<ChinaScreen> {
                 height: hi/3.5,
                 width: wi/1.2,
                 child: Card(
-                  shape: RoundedRectangleBorder(
+                  shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(20),
                           bottomRight: Radius.circular(20),
@@ -64,7 +64,7 @@ class _ChinaScreenState extends State<ChinaScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>ChinaDocuments()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const ChinaDocuments()));
                             },
                               child: Column(
                                 children: [
@@ -77,7 +77,7 @@ class _ChinaScreenState extends State<ChinaScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>ChinaScholarships()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const ChinaScholarships()));
                             },
                               child: Column(
                                 children: [
@@ -97,7 +97,7 @@ class _ChinaScreenState extends State<ChinaScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 50),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>ChinaExams()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const ChinaExams()));
                             },
                               child: Column(
                                 children: [
@@ -110,7 +110,7 @@ class _ChinaScreenState extends State<ChinaScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 60),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>ChinaColleges()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const ChinaColleges()));
                             },
                               child: Column(
                                 children: [
@@ -133,8 +133,8 @@ class _ChinaScreenState extends State<ChinaScreen> {
           onPressed: (){
             Navigator.pop(context);
           },
-          child: Icon(Icons.arrow_back, color: Colors.white, size: 30,),
           backgroundColor: Colors.purple.shade800,
+          child: Icon(Icons.arrow_back, color: Colors.white, size: 30,),
         ),
       ),
     );
@@ -150,7 +150,7 @@ class ChinaExams extends StatefulWidget {
 class _ChinaExamsState extends State<ChinaExams> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }
 class ChinaColleges extends StatefulWidget {
@@ -163,7 +163,7 @@ class ChinaColleges extends StatefulWidget {
 class _ChinaCollegesState extends State<ChinaColleges> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }
 class ChinaDocuments extends StatefulWidget {
@@ -176,7 +176,7 @@ class ChinaDocuments extends StatefulWidget {
 class _ChinaDocumentsState extends State<ChinaDocuments> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }
 class ChinaScholarships extends StatefulWidget {
@@ -189,6 +189,6 @@ class ChinaScholarships extends StatefulWidget {
 class _ChinaScholarshipsState extends State<ChinaScholarships> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }

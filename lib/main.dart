@@ -15,7 +15,7 @@ import 'package:sanveshflutter/UKScreen.dart';
 import 'package:sanveshflutter/USAScreen.dart';
 import 'package:sanveshflutter/NewZealandScreen.dart';
 void main(){
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
@@ -27,7 +27,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: NewScreen(),
       debugShowCheckedModeBanner: false,
     );
@@ -53,7 +53,7 @@ class _NewScreenState extends State<NewScreen> {
             Container(
               height: hi/3,
               width: wi,
-              decoration: BoxDecoration(borderRadius: BorderRadius.only(bottomRight:Radius.circular(20), bottomLeft: Radius.circular(20)),
+              decoration: BoxDecoration(borderRadius: const BorderRadius.only(bottomRight:Radius.circular(20), bottomLeft: Radius.circular(20)),
               color: Colors.purple.shade800),
               child: Column(
                 children: [
@@ -63,13 +63,13 @@ class _NewScreenState extends State<NewScreen> {
                   Row(
                     children: [
                       Container(width: wi/12,),
-                      Text("Explore", style: TextStyle(fontSize: 25, color: Colors.white),),
+                      const Text("Explore", style: TextStyle(fontSize: 25, color: Colors.white),),
                     ],
                   ),
                   Row(
                     children: [
                       Container(width: wi/12,),
-                      Text("Your World", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),),
+                      const Text("Your World", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),),
                     ],
                   )
                 ],
@@ -81,7 +81,7 @@ class _NewScreenState extends State<NewScreen> {
             Padding(
               padding: const EdgeInsets.only(left: 20, right: 20),
               child: InkWell(onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>JapanScreen()));
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>const JapanScreen()));
               },
                 child: Container(
                   height: hi/6,
@@ -98,12 +98,12 @@ class _NewScreenState extends State<NewScreen> {
                           height: hi/8,
                           width: wi/2.8,
                           decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
-                          color: Colors.white, image: DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2013/07/13/14/15/japan-162328_1280.png"), fit: BoxFit.fill)),
+                          color: Colors.white, image: const DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2013/07/13/14/15/japan-162328_1280.png"), fit: BoxFit.fill)),
                         ),
                         Column(mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Container(width: wi/2.5,),
-                            Text("Japan", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
+                            const Text("Japan", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
                           ],
                         )
                       ],
@@ -118,7 +118,7 @@ class _NewScreenState extends State<NewScreen> {
             Padding(
               padding: const EdgeInsets.only(left: 20, right: 20),
               child: InkWell(onTap:(){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>AustraliaScreen()));
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>const AustraliaScreen()));
               },
                 child: Container(
                   height: hi/6,
@@ -135,12 +135,12 @@ class _NewScreenState extends State<NewScreen> {
                           height: hi/8,
                           width: wi/2.8,
                           decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
-                              color: Colors.white, image: DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2013/07/12/18/42/australia-153732_640.png"), fit: BoxFit.fill)),
+                              color: Colors.white, image: const DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2013/07/12/18/42/australia-153732_640.png"), fit: BoxFit.fill)),
                         ),
                         Column(mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Container(width: wi/2.5,),
-                            Text("Australia", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
+                            const Text("Australia", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
                           ],
                         )
                       ],
@@ -155,7 +155,7 @@ class _NewScreenState extends State<NewScreen> {
         Padding(
           padding: const EdgeInsets.only(left: 20, right: 20),
           child: InkWell(onTap: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>USAScreen()));
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>const USAScreen()));
           },
             child: Container(
               height: hi/6,
@@ -172,12 +172,12 @@ class _NewScreenState extends State<NewScreen> {
                       height: hi/8,
                       width: wi/2.8,
                       decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
-                          color: Colors.white, image: DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2012/04/10/16/22/united-26177_1280.png"), fit: BoxFit.fill)),
+                          color: Colors.white, image: const DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2012/04/10/16/22/united-26177_1280.png"), fit: BoxFit.fill)),
                     ),
                     Column(mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(width: wi/2.5,),
-                        Text("USA", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
+                        const Text("USA", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
                       ],
                     )
                   ],
@@ -192,7 +192,7 @@ class _NewScreenState extends State<NewScreen> {
         Padding(
           padding: const EdgeInsets.only(left: 20, right: 20),
           child: InkWell(onTap: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>UKScreen()));
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>const UKScreen()));
           },
             child: Container(
               height: hi/6,
@@ -209,12 +209,12 @@ class _NewScreenState extends State<NewScreen> {
                       height: hi/8,
                       width: wi/2.8,
                       decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
-                          color: Colors.white, image: DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2017/10/31/23/52/england-2906827_640.png"), fit: BoxFit.fill)),
+                          color: Colors.white, image: const DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2017/10/31/23/52/england-2906827_640.png"), fit: BoxFit.fill)),
                     ),
                     Column(mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(width: wi/2.5,),
-                        Text("UK", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
+                        const Text("UK", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
                       ],
                     )
                   ],
@@ -229,7 +229,7 @@ class _NewScreenState extends State<NewScreen> {
         Padding(
           padding: const EdgeInsets.only(left: 20, right: 20),
           child: InkWell(onTap: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>ChinaScreen()));
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>const ChinaScreen()));
           },
             child: Container(
               height: hi/6,
@@ -246,12 +246,12 @@ class _NewScreenState extends State<NewScreen> {
                       height: hi/8,
                       width: wi/2.8,
                       decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
-                          color: Colors.white, image: DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2020/02/24/01/45/china-4875007_640.png"), fit: BoxFit.fill)),
+                          color: Colors.white, image: const DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2020/02/24/01/45/china-4875007_640.png"), fit: BoxFit.fill)),
                     ),
                     Column(mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(width: wi/2.5,),
-                        Text("China", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
+                        const Text("China", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
                       ],
                     )
                   ],
@@ -266,7 +266,7 @@ class _NewScreenState extends State<NewScreen> {
         Padding(
           padding: const EdgeInsets.only(left: 20, right: 20),
           child: InkWell(onTap: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>GermanyScreen()));
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>const GermanyScreen()));
           },
             child: Container(
               height: hi/6,
@@ -283,12 +283,12 @@ class _NewScreenState extends State<NewScreen> {
                       height: hi/8,
                       width: wi/2.8,
                       decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
-                          color: Colors.white, image: DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2012/04/12/23/52/germany-31017_1280.png"), fit: BoxFit.fill)),
+                          color: Colors.white, image: const DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2012/04/12/23/52/germany-31017_1280.png"), fit: BoxFit.fill)),
                     ),
                     Column(mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(width: wi/2.5,),
-                        Text("Germany", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
+                        const Text("Germany", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
                       ],
                     )
                   ],
@@ -303,7 +303,7 @@ class _NewScreenState extends State<NewScreen> {
         Padding(
           padding: const EdgeInsets.only(left: 20, right: 20),
           child: InkWell(onTap: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>IrelandScreen()));
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>const IrelandScreen()));
           },
             child: Container(
               height: hi/6,
@@ -320,12 +320,12 @@ class _NewScreenState extends State<NewScreen> {
                       height: hi/8,
                       width: wi/2.8,
                       decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
-                          color: Colors.white, image: DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2013/07/13/14/15/ireland-162323_1280.png"), fit: BoxFit.fill)),
+                          color: Colors.white, image: const DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2013/07/13/14/15/ireland-162323_1280.png"), fit: BoxFit.fill)),
                     ),
                     Column(mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(width: wi/2.5,),
-                        Text("Ireland", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
+                        const Text("Ireland", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
                       ],
                     )
                   ],
@@ -340,7 +340,7 @@ class _NewScreenState extends State<NewScreen> {
         Padding(
           padding: const EdgeInsets.only(left: 20, right: 20),
           child: InkWell(onTap: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>FranceScreen()));
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>const FranceScreen()));
           },
             child: Container(
               height: hi/6,
@@ -357,12 +357,12 @@ class _NewScreenState extends State<NewScreen> {
                       height: hi/8,
                       width: wi/2.8,
                       decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
-                          color: Colors.white, image: DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2013/07/13/14/15/france-162295_640.png"), fit: BoxFit.fill)),
+                          color: Colors.white, image: const DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2013/07/13/14/15/france-162295_640.png"), fit: BoxFit.fill)),
                     ),
                     Column(mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(width: wi/2.5,),
-                        Text("France", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
+                        const Text("France", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
                       ],
                     )
                   ],
@@ -377,7 +377,7 @@ class _NewScreenState extends State<NewScreen> {
         Padding(
           padding: const EdgeInsets.only(left: 20, right: 20),
           child: InkWell(onTap: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>ItalyScreen()));
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>const ItalyScreen()));
           },
             child: Container(
               height: hi/6,
@@ -394,12 +394,12 @@ class _NewScreenState extends State<NewScreen> {
                       height: hi/8,
                       width: wi/2.8,
                       decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
-                          color: Colors.white, image: DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2013/07/13/14/15/italy-162326_640.png"), fit: BoxFit.fill)),
+                          color: Colors.white, image: const DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2013/07/13/14/15/italy-162326_640.png"), fit: BoxFit.fill)),
                     ),
                     Column(mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(width: wi/2.5,),
-                        Text("Italy", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
+                        const Text("Italy", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
                       ],
                     )
                   ],
@@ -414,7 +414,7 @@ class _NewScreenState extends State<NewScreen> {
         Padding(
           padding: const EdgeInsets.only(left: 20, right: 20),
           child: InkWell(onTap: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>DenmarkScreen()));
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>const DenmarkScreen()));
           },
             child: Container(
               height: hi/6,
@@ -431,12 +431,12 @@ class _NewScreenState extends State<NewScreen> {
                       height: hi/8,
                       width: wi/2.8,
                       decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
-                          color: Colors.white, image: DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2020/02/26/02/34/denmark-4880481_1280.png"), fit: BoxFit.fill)),
+                          color: Colors.white, image: const DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2020/02/26/02/34/denmark-4880481_1280.png"), fit: BoxFit.fill)),
                     ),
                     Column(mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(width: wi/2.5,),
-                        Text("Denmark", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
+                        const Text("Denmark", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
                       ],
                     )
                   ],
@@ -451,7 +451,7 @@ class _NewScreenState extends State<NewScreen> {
         Padding(
           padding: const EdgeInsets.only(left: 20, right: 20),
           child: InkWell(onTap: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>CanadaScreen()));
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>const CanadaScreen()));
           },
             child: Container(
               height: hi/6,
@@ -468,12 +468,12 @@ class _NewScreenState extends State<NewScreen> {
                       height: hi/8,
                       width: wi/2.8,
                       decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
-                          color: Colors.white, image: DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2012/04/10/23/27/canada-27003_640.png"), fit: BoxFit.fill)),
+                          color: Colors.white, image: const DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2012/04/10/23/27/canada-27003_640.png"), fit: BoxFit.fill)),
                     ),
                     Column(mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(width: wi/2.5,),
-                        Text("Canada", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
+                        const Text("Canada", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
                       ],
                     )
                   ],
@@ -488,7 +488,7 @@ class _NewScreenState extends State<NewScreen> {
         Padding(
           padding: const EdgeInsets.only(left: 20, right: 20),
           child: InkWell(onTap: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>NeatherlandsScreen()));
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>const NeatherlandsScreen()));
           },
             child: Container(
               height: hi/6,
@@ -505,12 +505,12 @@ class _NewScreenState extends State<NewScreen> {
                       height: hi/8,
                       width: wi/2.8,
                       decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
-                          color: Colors.white, image: DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2013/07/13/14/16/netherlands-162372_640.png"), fit: BoxFit.fill)),
+                          color: Colors.white, image: const DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2013/07/13/14/16/netherlands-162372_640.png"), fit: BoxFit.fill)),
                     ),
                     Column(mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(width: wi/2.5,),
-                        Text("Neatherlands", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
+                        const Text("Neatherlands", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
                       ],
                     )
                   ],
@@ -525,7 +525,7 @@ class _NewScreenState extends State<NewScreen> {
         Padding(
           padding: const EdgeInsets.only(left: 20, right: 20),
           child: InkWell(onTap: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>NewZealandScreen()));
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>const NewZealandScreen()));
           },
             child: Container(
               height: hi/6,
@@ -542,12 +542,12 @@ class _NewScreenState extends State<NewScreen> {
                       height: hi/8,
                       width: wi/2.8,
                       decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
-                          color: Colors.white, image: DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2013/07/13/14/16/new-zealand-162373_1280.png"), fit: BoxFit.fill)),
+                          color: Colors.white, image: const DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2013/07/13/14/16/new-zealand-162373_1280.png"), fit: BoxFit.fill)),
                     ),
                     Column(mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(width: wi/2.5,),
-                        Text("NewZealand", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
+                        const Text("NewZealand", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
                       ],
                     )
                   ],
@@ -562,7 +562,7 @@ class _NewScreenState extends State<NewScreen> {
         Padding(
           padding: const EdgeInsets.only(left: 20, right: 20),
           child: InkWell(onTap: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>NorwayScreen()));
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>const NorwayScreen()));
           },
             child: Container(
               height: hi/6,
@@ -579,12 +579,12 @@ class _NewScreenState extends State<NewScreen> {
                       height: hi/8,
                       width: wi/2.8,
                       decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
-                          color: Colors.white, image: DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2012/04/11/15/17/norway-28453_1280.png"), fit: BoxFit.fill)),
+                          color: Colors.white, image: const DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2012/04/11/15/17/norway-28453_1280.png"), fit: BoxFit.fill)),
                     ),
                     Column(mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(width: wi/2.5,),
-                        Text("Norway", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
+                        const Text("Norway", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
                       ],
                     )
                   ],
@@ -599,7 +599,7 @@ class _NewScreenState extends State<NewScreen> {
         Padding(
           padding: const EdgeInsets.only(left: 20, right: 20),
           child: InkWell(onTap: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>SingaporeScreen()));
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>const SingaporeScreen()));
           },
             child: Container(
               height: hi/6,
@@ -616,12 +616,12 @@ class _NewScreenState extends State<NewScreen> {
                       height: hi/8,
                       width: wi/2.8,
                       decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
-                          color: Colors.white, image: DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2012/04/10/22/58/singapore-26793_1280.png"), fit: BoxFit.fill)),
+                          color: Colors.white, image: const DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2012/04/10/22/58/singapore-26793_1280.png"), fit: BoxFit.fill)),
                     ),
                     Column(mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(width: wi/2.5,),
-                        Text("Singapore", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
+                        const Text("Singapore", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),)
                       ],
                     )
                   ],

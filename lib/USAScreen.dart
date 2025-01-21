@@ -12,16 +12,16 @@ class _USAScreenState extends State<USAScreen> {
     double hi = MediaQuery.of(context).size.height;
     double wi = MediaQuery.of(context).size.width;
     return Container(
-      decoration: BoxDecoration(color: Colors.amber),
+      decoration: const BoxDecoration(color: Colors.amber),
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: SingleChildScrollView(scrollDirection: Axis.vertical,
-          child: Stack(alignment: Alignment(0, 2),
+          child: Stack(alignment: const Alignment(0, 2),
             children: [
               Container(
                 height: hi/2,
                 width: wi,
-                decoration: BoxDecoration(borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20),
+                decoration: BoxDecoration(borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(20),
                     bottomRight: Radius.circular(20)
                 ),
                     color: Colors.purple.shade800
@@ -34,7 +34,7 @@ class _USAScreenState extends State<USAScreen> {
                     Row(
                       children: [
                         Container(width: wi/16,),
-                        Text("USA", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),),
+                        const Text("USA", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),),
                       ],
                     ),
                   ],
@@ -44,7 +44,7 @@ class _USAScreenState extends State<USAScreen> {
                 height: hi/3.5,
                 width: wi/1.2,
                 child: Card(
-                  shape: RoundedRectangleBorder(
+                  shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(20),
                           bottomRight: Radius.circular(20),
@@ -64,7 +64,7 @@ class _USAScreenState extends State<USAScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>USADocuments()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const USADocuments()));
                             },
                               child: Column(
                                 children: [
@@ -77,7 +77,7 @@ class _USAScreenState extends State<USAScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>USAScholarships()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const USAScholarships()));
                             },
                               child: Column(
                                 children: [
@@ -97,7 +97,7 @@ class _USAScreenState extends State<USAScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 50),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>USAExams()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const USAExams()));
                             },
                               child: Column(
                                 children: [
@@ -110,7 +110,7 @@ class _USAScreenState extends State<USAScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 60),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>USAColleges()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const USAColleges()));
                             },
                               child: Column(
                                 children: [
@@ -133,8 +133,8 @@ class _USAScreenState extends State<USAScreen> {
           onPressed: (){
             Navigator.pop(context);
           },
-          child: Icon(Icons.arrow_back, color: Colors.white, size: 30,),
           backgroundColor: Colors.purple.shade800,
+          child: Icon(Icons.arrow_back, color: Colors.white, size: 30,),
         ),
       ),
     );
@@ -151,7 +151,7 @@ class USAExams extends StatefulWidget {
 class _USAExamsState extends State<USAExams> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }
 
@@ -165,7 +165,7 @@ class USADocuments extends StatefulWidget {
 class _USADocumentsState extends State<USADocuments> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
 
     );
   }
@@ -181,7 +181,7 @@ class USAColleges extends StatefulWidget {
 class _USACollegesState extends State<USAColleges> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }
 
@@ -197,7 +197,7 @@ class _USAScholarshipsState extends State<USAScholarships> {
   Widget build(BuildContext context) {
     double hi = MediaQuery.of(context).size.height;
     double wi = MediaQuery.of(context).size.width;
-    return Scaffold(
+    return const Scaffold(
 
     );
   }

@@ -12,16 +12,16 @@ class _FranceScreenState extends State<FranceScreen> {
     double hi = MediaQuery.of(context).size.height;
     double wi = MediaQuery.of(context).size.width;
     return Container(
-      decoration: BoxDecoration(color: Colors.amber),
+      decoration: const BoxDecoration(color: Colors.amber),
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: SingleChildScrollView(scrollDirection: Axis.vertical,
-          child: Stack(alignment: Alignment(0, 2),
+          child: Stack(alignment: const Alignment(0, 2),
             children: [
               Container(
                 height: hi/2,
                 width: wi,
-                decoration: BoxDecoration(borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20),
+                decoration: BoxDecoration(borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(20),
                     bottomRight: Radius.circular(20)
                 ),
                     color: Colors.purple.shade800
@@ -34,7 +34,7 @@ class _FranceScreenState extends State<FranceScreen> {
                     Row(
                       children: [
                         Container(width: wi/16,),
-                        Text("France", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),),
+                        const Text("France", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),),
                       ],
                     ),
                   ],
@@ -44,7 +44,7 @@ class _FranceScreenState extends State<FranceScreen> {
                 height: hi/3.5,
                 width: wi/1.2,
                 child: Card(
-                  shape: RoundedRectangleBorder(
+                  shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(20),
                           bottomRight: Radius.circular(20),
@@ -64,7 +64,7 @@ class _FranceScreenState extends State<FranceScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>FranceDocuments()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const FranceDocuments()));
                             },
                               child: Column(
                                 children: [
@@ -77,7 +77,7 @@ class _FranceScreenState extends State<FranceScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>FranceScholarships()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const FranceScholarships()));
                             },
                               child: Column(
                                 children: [
@@ -97,7 +97,7 @@ class _FranceScreenState extends State<FranceScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 50),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>FranceExams()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const FranceExams()));
                             },
                               child: Column(
                                 children: [
@@ -110,7 +110,7 @@ class _FranceScreenState extends State<FranceScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 60),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>FranceColleges()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const FranceColleges()));
                             },
                               child: Column(
                                 children: [
@@ -133,8 +133,8 @@ class _FranceScreenState extends State<FranceScreen> {
           onPressed: (){
             Navigator.pop(context);
           },
-          child: Icon(Icons.arrow_back, color: Colors.white, size: 30,),
           backgroundColor: Colors.purple.shade800,
+          child: Icon(Icons.arrow_back, color: Colors.white, size: 30,),
         ),
       ),
     );
@@ -150,7 +150,7 @@ class FranceExams extends StatefulWidget {
 class _FranceExamsState extends State<FranceExams> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }
 class FranceColleges extends StatefulWidget {
@@ -163,7 +163,7 @@ class FranceColleges extends StatefulWidget {
 class _FranceCollegesState extends State<FranceColleges> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }
 class FranceDocuments extends StatefulWidget {
@@ -176,7 +176,7 @@ class FranceDocuments extends StatefulWidget {
 class _FranceDocumentsState extends State<FranceDocuments> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }
 class FranceScholarships extends StatefulWidget {
@@ -189,6 +189,6 @@ class FranceScholarships extends StatefulWidget {
 class _FranceScholarshipsState extends State<FranceScholarships> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }

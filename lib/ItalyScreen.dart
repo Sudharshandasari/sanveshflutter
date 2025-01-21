@@ -12,16 +12,16 @@ class _ItalyScreenState extends State<ItalyScreen> {
     double hi = MediaQuery.of(context).size.height;
     double wi = MediaQuery.of(context).size.width;
     return Container(
-      decoration: BoxDecoration(color: Colors.amber),
+      decoration: const BoxDecoration(color: Colors.amber),
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: SingleChildScrollView(scrollDirection: Axis.vertical,
-          child: Stack(alignment: Alignment(0, 2),
+          child: Stack(alignment: const Alignment(0, 2),
             children: [
               Container(
                 height: hi/2,
                 width: wi,
-                decoration: BoxDecoration(borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20),
+                decoration: BoxDecoration(borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(20),
                     bottomRight: Radius.circular(20)
                 ),
                     color: Colors.purple.shade800
@@ -34,7 +34,7 @@ class _ItalyScreenState extends State<ItalyScreen> {
                     Row(
                       children: [
                         Container(width: wi/16,),
-                        Text("Italy", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),),
+                        const Text("Italy", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),),
                       ],
                     ),
                   ],
@@ -44,7 +44,7 @@ class _ItalyScreenState extends State<ItalyScreen> {
                 height: hi/3.5,
                 width: wi/1.2,
                 child: Card(
-                  shape: RoundedRectangleBorder(
+                  shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(20),
                           bottomRight: Radius.circular(20),
@@ -64,7 +64,7 @@ class _ItalyScreenState extends State<ItalyScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>ItalyDocuments()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const ItalyDocuments()));
                             },
                               child: Column(
                                 children: [
@@ -77,7 +77,7 @@ class _ItalyScreenState extends State<ItalyScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>ItalyScholarships()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const ItalyScholarships()));
                             },
                               child: Column(
                                 children: [
@@ -97,7 +97,7 @@ class _ItalyScreenState extends State<ItalyScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 50),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>ItalyExams()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const ItalyExams()));
                             },
                               child: Column(
                                 children: [
@@ -110,7 +110,7 @@ class _ItalyScreenState extends State<ItalyScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 60),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>ItalyColleges()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const ItalyColleges()));
                             },
                               child: Column(
                                 children: [
@@ -133,8 +133,8 @@ class _ItalyScreenState extends State<ItalyScreen> {
           onPressed: (){
             Navigator.pop(context);
           },
-          child: Icon(Icons.arrow_back, color: Colors.white, size: 30,),
           backgroundColor: Colors.purple.shade800,
+          child: Icon(Icons.arrow_back, color: Colors.white, size: 30,),
         ),
       ),
     );
@@ -150,7 +150,7 @@ class ItalyExams extends StatefulWidget {
 class _ItalyExamsState extends State<ItalyExams> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }
 class ItalyColleges extends StatefulWidget {
@@ -163,7 +163,7 @@ class ItalyColleges extends StatefulWidget {
 class _ItalyCollegesState extends State<ItalyColleges> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }
 class ItalyDocuments extends StatefulWidget {
@@ -176,7 +176,7 @@ class ItalyDocuments extends StatefulWidget {
 class _ItalyDocumentsState extends State<ItalyDocuments> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }
 class ItalyScholarships extends StatefulWidget {
@@ -189,6 +189,6 @@ class ItalyScholarships extends StatefulWidget {
 class _ItalyScholarshipsState extends State<ItalyScholarships> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }

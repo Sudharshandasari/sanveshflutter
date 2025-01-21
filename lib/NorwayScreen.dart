@@ -12,16 +12,16 @@ class _NorwayScreenState extends State<NorwayScreen> {
     double hi = MediaQuery.of(context).size.height;
     double wi = MediaQuery.of(context).size.width;
     return Container(
-      decoration: BoxDecoration(color: Colors.amber),
+      decoration: const BoxDecoration(color: Colors.amber),
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: SingleChildScrollView(scrollDirection: Axis.vertical,
-          child: Stack(alignment: Alignment(0, 2),
+          child: Stack(alignment: const Alignment(0, 2),
             children: [
               Container(
                 height: hi/2,
                 width: wi,
-                decoration: BoxDecoration(borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20),
+                decoration: BoxDecoration(borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(20),
                     bottomRight: Radius.circular(20)
                 ),
                     color: Colors.purple.shade800
@@ -34,7 +34,7 @@ class _NorwayScreenState extends State<NorwayScreen> {
                     Row(
                       children: [
                         Container(width: wi/16,),
-                        Text("Norway", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),),
+                        const Text("Norway", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),),
                       ],
                     ),
                   ],
@@ -44,7 +44,7 @@ class _NorwayScreenState extends State<NorwayScreen> {
                 height: hi/3.5,
                 width: wi/1.2,
                 child: Card(
-                  shape: RoundedRectangleBorder(
+                  shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(20),
                           bottomRight: Radius.circular(20),
@@ -64,7 +64,7 @@ class _NorwayScreenState extends State<NorwayScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>NorwayDocuments()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const NorwayDocuments()));
                             },
                               child: Column(
                                 children: [
@@ -77,7 +77,7 @@ class _NorwayScreenState extends State<NorwayScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>NorwayScholarships()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const NorwayScholarships()));
                             },
                               child: Column(
                                 children: [
@@ -97,7 +97,7 @@ class _NorwayScreenState extends State<NorwayScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 50),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>NorwayExams()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const NorwayExams()));
                             },
                               child: Column(
                                 children: [
@@ -110,7 +110,7 @@ class _NorwayScreenState extends State<NorwayScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 60),
                             child: InkWell(onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>NorwayColleges()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const NorwayColleges()));
                             },
                               child: Column(
                                 children: [
@@ -133,8 +133,8 @@ class _NorwayScreenState extends State<NorwayScreen> {
           onPressed: (){
             Navigator.pop(context);
           },
-          child: Icon(Icons.arrow_back, color: Colors.white, size: 30,),
           backgroundColor: Colors.purple.shade800,
+          child: Icon(Icons.arrow_back, color: Colors.white, size: 30,),
         ),
       ),
     );
@@ -160,13 +160,13 @@ class _NorwayExamsState extends State<NorwayExams> {
               height: hi/1,
               width: wi,
               decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.purple.shade800),
-              child: Padding(
-                padding: const EdgeInsets.all(20.0),
+              child: const Padding(
+                padding: EdgeInsets.all(20.0),
                 child: SingleChildScrollView(scrollDirection: Axis.vertical,
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Exams Required", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 35, color: Colors.white),
@@ -175,7 +175,7 @@ class _NorwayExamsState extends State<NorwayExams> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("PTE Academic", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
@@ -184,7 +184,7 @@ class _NorwayExamsState extends State<NorwayExams> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("TOEFL iBT", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
@@ -193,7 +193,7 @@ class _NorwayExamsState extends State<NorwayExams> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("IELTS", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
@@ -202,7 +202,7 @@ class _NorwayExamsState extends State<NorwayExams> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("C1 Advanced", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
@@ -241,33 +241,33 @@ class _NorwayDocumentsState extends State<NorwayDocuments> {
               height: hi/1,
               width: wi,
               decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.purple.shade800),
-              child: Padding(
-                padding: const EdgeInsets.all(20.0),
+              child: const Padding(
+                padding: EdgeInsets.all(20.0),
                 child: SingleChildScrollView(scrollDirection: Axis.vertical,
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Text("Required Documents", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30, color: Colors.white),
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Text("  Health insurance", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Text("  Proof of financial ability", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Text(" Birth certificate", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text(" Receipt of the fees that you have paid for the admission", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -276,7 +276,7 @@ class _NorwayDocumentsState extends State<NorwayDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text(" A valid passport", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
@@ -285,17 +285,17 @@ class _NorwayDocumentsState extends State<NorwayDocuments> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Text(" 2 passport-sized photographs", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Text(" Statement of purpose", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Text(" Any evidence that proves you will leave Norway after course completion", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
                         ),
                       ),
@@ -331,38 +331,38 @@ class _NorwayCollegesState extends State<NorwayColleges> {
               height: hi/1,
               width: wi,
               decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.purple.shade800),
-              child: Padding(
-                padding: const EdgeInsets.all(20.0),
+              child: const Padding(
+                padding: EdgeInsets.all(20.0),
                 child: SingleChildScrollView(scrollDirection: Axis.vertical,
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Text("Top Universities", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30, color: Colors.white),
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Text(" University of Bergen", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Text(" BI Norwegian Business Schoo", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Text(" Kristiania University", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Text("Molde University College", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Text(" Norwegian University of Science and Technology", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
                         ),
                       ),
@@ -397,13 +397,13 @@ class _NorwayScholarshipsState extends State<NorwayScholarships> {
               height: hi/1,
               width: wi,
               decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.purple.shade800),
-              child: Padding(
-                padding: const EdgeInsets.all(20.0),
+              child: const Padding(
+                padding: EdgeInsets.all(20.0),
                 child: SingleChildScrollView(scrollDirection: Axis.horizontal,
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Scholarships in Norway", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30, color: Colors.white),
@@ -412,7 +412,7 @@ class _NorwayScholarshipsState extends State<NorwayScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Leakey Foundation Research Grants 2024", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -421,7 +421,7 @@ class _NorwayScholarshipsState extends State<NorwayScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Horowitz Foundation Grants 2023", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -430,7 +430,7 @@ class _NorwayScholarshipsState extends State<NorwayScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Ethicon Foundation Fund Travel Grants 2023", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),textAlign: TextAlign.justify,
@@ -439,7 +439,7 @@ class _NorwayScholarshipsState extends State<NorwayScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("ACI Foundation Richard D. Stehly Memorial Scholarships, 2023", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -448,7 +448,7 @@ class _NorwayScholarshipsState extends State<NorwayScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Howard G. Buffett Fund For Women Journalists (FWJ) 2023", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -457,7 +457,7 @@ class _NorwayScholarshipsState extends State<NorwayScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("SFI Industry RD&I Fellowship Programme 2023", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -466,7 +466,7 @@ class _NorwayScholarshipsState extends State<NorwayScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("ServiceScape Scholarship 2023", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
@@ -475,7 +475,7 @@ class _NorwayScholarshipsState extends State<NorwayScholarships> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
                           children: [
                             Text("Dissertation Fieldwork Grants 2023", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
